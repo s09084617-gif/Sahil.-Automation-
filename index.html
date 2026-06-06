@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Workout Dashboard</title>
+<style>
+body{margin:0;font-family:Arial;background:#111;color:#fff}
+header{padding:20px;text-align:center;background:#000}
+nav{display:flex;gap:10px;justify-content:center;padding:10px;background:#222;flex-wrap:wrap}
+button{padding:10px 20px;cursor:pointer}
+iframe{width:100%;height:calc(100vh - 120px);border:none}
+</style>
+</head>
+<body>
+<header><h1>Sahil Workout Dashboard</h1></header>
+<nav>
+<button onclick="loadPage('sahil_chest_workout.html')">Chest</button>
+<button onclick="loadPage('sahil_back_workout.html')">Back</button>
+<button onclick="loadPage('sahil_shoulder_workout.html')">Shoulders</button>
+<button onclick="loadPage('sahil_legs_hiit_workout.html')">Legs & HIIT</button>
+</nav>
+<iframe id="frame" src="sahil_chest_workout.html"></iframe>
+<script>
+function loadPage(page){document.getElementById('frame').src=page;}
+</script>
+</body>
+</html>
